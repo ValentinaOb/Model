@@ -378,7 +378,7 @@ public class Main {
     public static void main4(String[] args) {
 
         try (Scanner in = new Scanner(System.in)) {
-            System.out.println("\nPyassonn\n\n ");
+            System.out.println("\nPyassonn\n");
             {
                 // Pyassonn
                 int ksi;
@@ -413,7 +413,7 @@ public class Main {
                 //
                 //
 
-                System.out.println("\nEp\n\n ");
+                System.out.println("\nEp\n ");
                 // EP
                 double ksi1 = 0, a, ze = 0, de = 0, se = 0, s1e = 0;
                 a = 5000;
