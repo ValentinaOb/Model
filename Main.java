@@ -32,7 +32,7 @@ public class Main {
     public static void main1(String[] args) {
         try (Scanner in = new Scanner(System.in)) {
 
-            System.out.println("\nPyassonn\n\n ");
+            System.out.println("\nPyassonn\n");
             { // Pyassonn
                 int ksi;
                 double s = 0, s1 = 0, sa, sa1, z, prob, sum, lambda, d = 0;
@@ -80,7 +80,7 @@ public class Main {
             }
 
             {
-                System.out.println("\nGeom\n\n ");
+                System.out.println("\nGeom\n ");
                 // Geom
                 int ksi1;
                 double sg = 0, s1g = 0, sag, sa1g, zg, probg, sumg, pg, dg = 0;
@@ -130,7 +130,7 @@ public class Main {
             }
 
             {
-                System.out.println("\nBinom\n\n ");
+                System.out.println("\nBinom\n ");
                 // Binom
                 int ksi2, n, min = 1, max = 100;
                 double sb = 0, s1b = 0, sab, sa1b;
@@ -181,7 +181,7 @@ public class Main {
 
         try (Scanner in = new Scanner(System.in)) {
 
-            System.out.println("\nEp\n\n ");
+            System.out.println("\nEp\n ");
             {// EP
                 double ksi = 0, a, sa, sa1, z = 0, d = 0, s = 0, s1 = 0;
 
@@ -213,7 +213,7 @@ public class Main {
                 System.out.println("D: " + d);
             }
 
-            System.out.println("\nPareto\n\n ");
+            System.out.println("\nPareto\n ");
             {// Pareto
                 double ksi = 0, a, sa, sa1, z = 0, d = 0, s = 0, s1 = 0;
 
@@ -245,7 +245,7 @@ public class Main {
                 System.out.println("D: " + d);
             }
 
-            System.out.println("\nPP\n\n ");
+            System.out.println("\nPP\n ");
             {// PP
                 int a = 5, b = 15;
                 double s = 0, s1 = 0, ksi, z, sa, sa1, d = 0;
