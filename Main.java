@@ -390,7 +390,6 @@ public class Main {
                 ksi = 0;
 
                 prob = Math.exp(-25);
-                // prob = Math.exp(-25);
                 System.out.println("Prob: " + prob);
 
                 sum = prob;
