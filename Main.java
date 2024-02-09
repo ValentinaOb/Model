@@ -389,7 +389,7 @@ public class Main {
 
                 ksi = 0;
 
-                prob = 0.00014;
+                prob = Math.exp(-25);
                 // prob = Math.exp(-25);
                 System.out.println("Prob: " + prob);
 
