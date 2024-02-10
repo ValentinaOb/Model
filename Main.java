@@ -235,25 +235,23 @@ public class Main {
     public static void main4(String[] args) {
 
         try (Scanner in = new Scanner(System.in)) {
-            System.out.println("\nPyassonn\n");
             {
                 // Pyassonn
                 int ksi;
-                double z, prob, sum;
-                double lambda = 9;
+                double z, prob, sum, lambda = 9;
                 double ksi1 = 0, a, ze, se;
                 a = 1 / 5000;
-                int k, u = 105000;
+                int k = 0, u = 105000;
 
-                k = 0;
                 for (int j = 0; j < 10000; j++) {
                     ksi = 0;
 
-                    prob = Math.exp(-lambda);
+                    k = 0;
 
+                    prob = Math.exp(-lambda);
                     sum = prob;
 
-                    z = new Random().nextFloat();
+                    z = new Random().nextDouble();
 
                     while (z > sum) {
                         ksi += 1;
