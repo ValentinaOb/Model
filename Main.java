@@ -84,15 +84,13 @@ public class Main {
                     System.out.println("Ksi1: " + ksi1);
 
                 }
-
             }
 
             {
                 System.out.println("\nBinom\n ");
                 // Binom
                 int ksi2, n, min = 1, max = 100;
-                double zb, pb;
-                pb = 0.5;
+                double zb, pb = 0.5;
 
                 for (int i = 0; i < 200; i++) {
 
@@ -135,16 +133,17 @@ public class Main {
 
             System.out.println("\nPareto\n ");
             {// Pareto
-                double ksi, a, z;
+                double ksi, a, b, z;
 
                 a = new Random().nextInt();
+                b = new Random().nextInt();
 
                 for (int i = 0; i < 200; i++) {
 
                     Random rd = new Random();
                     z = rd.nextDouble();
 
-                    ksi = a * (Math.pow(1 - z, (1 / a))) - a;
+                    ksi = a * (Math.pow(1 - z, (-1 / b))) - a;
 
                     System.out.println("Ksi: " + ksi);
                 }
@@ -167,22 +166,21 @@ public class Main {
             System.out.println("\nNP\n\n ");
 
             { // NP
-                double ksi;
-                double a = 5, b = 15, z;
+                double sum, a = 5, b = 15, z;
                 System.out.println("B: " + b);
                 for (int i = 0; i < 100; i++) {
 
-                    ksi = 0;
+                    sum = 0;
 
                     for (int j = 0; j < 12; j++) {
                         Random rd = new Random();
                         z = rd.nextDouble();
-                        ksi += z;
+                        sum += z;
                     }
-                    ksi = ksi - 6;
+                    sum = sum - 6;
 
-                    ksi = ksi * b + a;
-                    System.out.println("Ksi: " + ksi);
+                    sum = sum * b + a;
+                    System.out.println("Sum: " + sum);
                 }
 
             }
@@ -283,35 +281,6 @@ public class Main {
             }
         }
     }
-
-    /*
-     * double b1 = k, sumr = 0;
-     * double zr, p = 0.75, p1 = 0.25;
-     * 
-     * for (int j = 0; j < ksi1; j++) {
-     * zr = new Random().nextFloat();
-     * 
-     * if ((zr > 0) && (zr < p)) {
-     * sumr += 0;
-     * }
-     * if ((zr > p) && (zr < p1 + p)) {
-     * sumr += b1;
-     * }
-     * 
-     * if (sumr > u) {
-     * k++;
-     * }
-     * }
-     * 
-     * double r1 = k / ksi1;
-     * 
-     * System.out.println("K: " + k);
-     * System.out.println("R: " + r1);
-     * }
-     * }
-     * }
-     * 
-     */
 
     public static void main5(String[] args) {
 
