@@ -317,8 +317,23 @@ public class Main {
 
         try (Scanner in = new Scanner(System.in)) {
 
-            System.out.println("D: ");
+            double S0 = 1000, St;
+            double ksi, a = 5, b = 15, x, m = 0;
+            ksi = 0;
 
+            for (int j = 0; j < 20; j++) {
+                Random rd = new Random();
+                x = rd.nextDouble();
+                ksi += x;
+                S0 += ksi;
+                m = Math.exp(x - ((b * b) / 2));
+            }
+            ksi = ksi - 10;
+
+            ksi = ksi * b + a;
+            St = S0 * Math.exp(a) * m;
+
+            System.out.println("St: " + St);
         }
     }
 
