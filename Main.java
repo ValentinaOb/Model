@@ -317,7 +317,7 @@ public class Main {
 
         try (Scanner in = new Scanner(System.in)) {
 
-            double S0 = 1000, St;
+            double S0 = 100000, St;
             double ksi, a = 5, b = 15, x, m = 0;
             ksi = 0;
 
