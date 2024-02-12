@@ -286,25 +286,18 @@ public class Main {
 
         try (Scanner in = new Scanner(System.in)) {
 
-            double x, a = 5, b = 15, z, m, S0 = 100000, St;
-            System.out.println("B: " + b);
-            for (int i = 0; i < 100; i++) {
-
+            double x, z, n = 0.12, b = 0.05, S = 1000;
+            for (int i = 0; i < 20; i++) {
                 x = 0;
-
                 for (int j = 0; j < 12; j++) {
                     Random rd = new Random();
                     z = rd.nextDouble();
                     x += z;
-
                 }
                 x = x - 6;
-                x = x * b + a;
-                m = Math.exp(x - ((b * b) / 2));
 
-                St = S0 * Math.exp(a) * m;
-
-                System.out.println("St: " + St);
+                S = S * Math.exp(n) * Math.exp(b * x - ((b * b) / 2));
+                System.out.println("S: " + S);
             }
         }
     }
